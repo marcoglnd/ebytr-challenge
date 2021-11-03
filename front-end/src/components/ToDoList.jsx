@@ -8,7 +8,7 @@ export default function ToDoList() {
       .then(response => response.json())
       .then(data => setTodos(data))
       .catch(error => console.log(error))
-  })
+  }, [])
 
   return (
     <ul>
