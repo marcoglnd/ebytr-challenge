@@ -15,18 +15,19 @@ export default function TaskForm() {
   }
 
   return (
-    <div>
+    <div className="task-form">
       <form onSubmit={ handleSubmit }>
         <label htmlFor="task">
           <input
             type="text"
             name="task"
             id="task"
+            className="task-input"
             placeholder="Digite a tarefa"
             onChange={ ({ target: { value } }) => setTask(value)}
           />
         </label>
-        <button type="submit">Adicionar</button>
+        <button type="submit" className="submit-btn">Adicionar</button>
       </form>
     </div>
   )

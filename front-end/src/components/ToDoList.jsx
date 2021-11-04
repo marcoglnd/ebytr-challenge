@@ -12,10 +12,18 @@ export default function ToDoList() {
   }, [])
 
   return (
-    <ul>
-      { todos.map(({ todo }, index) => {
+    <table className="to-do-list">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+      { todos.map((todo, index) => {
         return <Task key={index} todo={todo} />
       }) }
-    </ul>
+      </tbody>
+    </table>
   )
 }
