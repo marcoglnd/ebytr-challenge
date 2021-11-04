@@ -15,8 +15,9 @@ export default function ToDoList() {
     <table className="to-do-list">
       <thead>
         <tr>
-          <th>Task</th>
-          <th>Date</th>
+          <th>task</th>
+          <th>date</th>
+          <th>remove</th>
         </tr>
       </thead>
       <tbody>

@@ -23,11 +23,11 @@ export default function TaskForm() {
             name="task"
             id="task"
             className="task-input"
-            placeholder="Digite a tarefa"
+            placeholder="write a new task"
             onChange={ ({ target: { value } }) => setTask(value)}
           />
         </label>
-        <button type="submit" className="submit-btn">Adicionar</button>
+        <button type="submit" className="submit-btn">add task</button>
       </form>
     </div>
   )

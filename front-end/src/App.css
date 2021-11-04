@@ -79,3 +79,11 @@ td, th {
 tbody > tr:hover {
   background: #ffdece;
 }
+
+.remove-icon {
+  cursor: pointer;
+}
+
+.remove-icon:hover {
+  color: #dd3a3a;
+}
